@@ -1,0 +1,506 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 5000px;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+/*start nav*/
+nav{
+    z-index: 2;
+    position: relative;
+    height: 0;
+}
+.row{
+    display: flex;
+}
+nav .logo{
+    flex: 50%;
+    font-size: 40px;
+    margin-top: 5px;
+    color: #fff;
+}
+nav .list{
+    flex: 50%;
+    margin-top: 5px;
+}
+nav .list ul{
+    list-style: none;
+    color: #fff;
+}
+nav .list ul li{
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+}
+nav .list ul li::after{
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 1px;
+    height: 3px;
+    width: 0px;
+    background-color:saddlebrown;
+    transition: .3s;
+}
+nav .list ul li:hover::after{
+width: 34px;
+
+}
+/*end nav*/
+
+/* start header*/
+.header{
+    z-index: 1;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(1.jpg);
+    position: relative;
+}
+svg{
+    margin-top: 348px;
+}
+.header .info{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -309px;
+}
+.header .info h2{
+margin: 0;
+font-size: 50px;
+}
+.header .info p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.header .info input{
+    border: none;
+    padding: 13px;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 10px;
+}
+.header .info button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background-color: chartreuse;
+}
+.header .info button:hover{
+    background-color: saddlebrown;
+}
+/* end header*/
+
+/* start foto1*/
+.offers{
+padding: 20px 0px;
+background-color:#0000000f;
+}
+.offers .heading p{
+    margin: 5px;
+}
+.offers .contrens{
+    margin-top: 50px;
+}
+.offers .foto1{
+    flex: 23.5%;
+    max-width: 23.5%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.offers .foto1:not(:last-of-type){
+    margin-right: 2%;
+}
+.offers .foto1 img{
+    width: 100%;
+    height: 60%;
+    box-shadow: 1px 2px 8px #696262;
+}
+.offers .foto1 .info{
+    padding: 10px 0px 10px 20px;
+}
+.offers .foto1 .info h4{
+font-size: 19px;
+margin: 0;
+}
+.offers .foto1 .info p{
+font-size: 14px;
+color: #999;
+}
+/* end foto1*/
+
+/* start foto2*/
+.foto2{
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.foto2 .boxs{
+    padding: 140px
+}
+.foto2 .box{
+    background-color:#949494b5;
+    flex: 32%;
+    max-width: 32%;
+margin-bottom: 20px;
+text-align: center;
+padding: 10px 20px;
+}
+.foto2 .box:not(:last-of-type){
+    margin-right: 2%;
+}
+.foto2 .box .icon{
+position: relative;
+background-color: #d4202099;
+width: 50px;
+height: 50px;
+margin: 0 auto;
+cursor: pointer;
+transition: .7s;
+border-radius: 30px;
+
+}
+.foto2 .box .icon:hover{
+    background-color:black;
+}
+.foto2 .box .icon i{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.foto2 .box h3{
+font-size: 15px;
+font-weight: 900;
+}
+.foto2 .box p{
+font-size: 14px;
+color:black;
+}
+/* end foto2*/
+
+/* start foto3*/
+
+.foto3{
+    margin-top: -24px;
+    background-color: #0000000f;
+    height: 600px;
+}
+
+.foto3 .item{
+    margin-top: 0 ;
+}
+.foto3 .box{
+    flex: 32%;
+    max-width: 32%;
+    text-align: center;
+    padding: 14px 9px;
+    transition: .4s;
+    border-radius: 15px;
+}
+.foto3 .box:hover{
+    background-color:rgba(83, 77, 77, 0.384);
+}
+.foto3 .box:not(:last-of-type){
+margin-right: 2%;
+}
+.foto3 .box img{
+    width: 90%;
+    transition: .3s;
+}
+.foto3 .box img:hover{
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px black ;
+}
+.kh2{
+    padding-top: 50px;
+}
+/* end foto3*/
+
+/* stárt foto4*/
+.foto4{
+    position: relative;
+    background-image: url(10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.foto4 .info{
+    position: absolute;
+    top: 30%;
+}
+.foto4 .info p{
+    font-size: 22px;
+    color: #f1bf07;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.foto4 .info button{
+    display: initial;
+    margin-top: -12px;
+}
+/* end foto4*/
+
+/* start foto5*/
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+.foto5 {
+    color:#FFF;
+    position: relative;
+    background-color: #0000000f;
+    height: 500px;
+    margin-top: -24px;
+
+}
+.foto5 h2 {
+    padding: 50px 0;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.foto5 .testim {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.foto5 .testim .box {
+    width: 33%;
+    position: relative;
+    margin-right: 3%;
+    padding: 6px 15px;
+    text-align: center;
+    color: #000;
+    background-color: #30c289;
+    border-top-left-radius: 15px;
+    transition: .3s;
+}
+.foto5 .testim .box:hover{
+background-color: saddlebrown ;
+}
+.foto5 .testim .box:last-child {
+    margin-right: 0;
+}
+.foto5 .testim .box p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.foto5 .testim .box h3 {
+    font-size: 14px;
+}
+.foto5 .testim .box .image {
+    width: 18%;
+    position: absolute;
+    height: 40%;
+    right: -17px;
+    top: 100px;
+    border: 4px solid #FFF;
+    border-bottom-right-radius: 15px;
+}
+.foto5 .testim .box .image img {
+    width: 100%;
+    height: 43px;
+    border-bottom-right-radius: 10px;
+}
+/* end foto5*/
+
+/* stárt foto6*/
+.foto6{
+    direction: rtl;
+    position: relative;
+    background-image: url(11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+.foto6 .info{
+    position: absolute;
+    top: 30%;
+}
+.foto6 .info p{
+    font-size: 22px;
+    color: #f1bf07;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.foto6 .info button{
+    display: initial;
+    margin-top: -12px;
+}
+/* end foto6*/
+
+/* start foto7*/
+.foto7{
+background-color: #0000000f;
+height: 500px;
+background-image: url(13.jpg);
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+.foto7 .icon{
+    padding-top: 100px;
+}
+.foto7 .heading{
+    text-align: center;
+}
+.foto7 .heading h2{
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+.foto7 .heading p{
+    color: #ffe500;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.foto7 .imges{
+    border-radius: 20px;
+text-align: center;
+}
+.foto7 .imges img{
+    box-shadow: 1px 3px 9px #f1bf07;
+    width: 159px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.foto7 .imges img:hover{
+    width: 200px;
+}
+/* end foto7*/
+
+/* start contackt*/
+
+.contact{
+    margin-top: 0px;
+    background-color:#0000000f;
+}
+.contact .box{
+    flex: 33.3333%;
+    max-width: 33.3333%;
+    margin-right: 60px;
+}
+.contact .box .kheder1 h2{
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact .box .kheder1  p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact .box .kheder2 h3{
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #25241a;
+    font-size: 24px;
+}
+.contact .box .kheder2 ul{
+    display:block;
+}
+.contact .box .kheder2 ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.contact .box .kheder2 ul li a{
+    list-style: none;
+}
+.contact .box .kheder2 ul li a i{
+    color: #211919;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+}
+.contact .box .kheder2 ul li a i:hover{
+    color: sandybrown;
+}
+.contact .box .kheder3 h3{
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #25241a;
+    font-size: 24px;
+}
+.contact .box .kheder3 ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.contact .box .kheder3 ul a{
+    list-style: none;
+}
+.contact .box .kheder3 ul li a i{
+    color: #211919;
+    font-size: 22px;
+    font-weight: 600;
+    transition: .3s;
+}
+.contact .box .kheder3 ul li a i:hover{
+    color: sandybrown;
+}
+
+/* end contackt*/
+
+/* frem work*/
+.main-btn{
+border-radius: 21px;
+    padding: 15px 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.main-btn:hover{
+background-color:saddlebrown;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+  
+    font-weight: 200;
+}
+.hr{
+    margin: 0 50px;
+    border: 0px;
+    height: 4px;
+    background: linear-gradient(45deg, #eb3f3f, #141955);
+}
+/* frem work*/
